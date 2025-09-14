@@ -136,11 +136,6 @@ nav, .header-controls{
     gap: var(--gap-header);
 }
 
-.project-page-text{
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-}
 
 /* Media Breakpoints */
 @media (max-width: 768px) {
