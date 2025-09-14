@@ -1,0 +1,4 @@
+.profileImage{
+    width: 7rem;
+    border-radius: var(--border-radius);
+}
