@@ -8,11 +8,6 @@
     --background: #F9FAFB;
     --border: #ccc;
 
-    --background-dark: #212121;
-    --body-dark: #B0B3B8;
-    --heading-dark: #E5E7EB;
-    --border-dark: #555555;
-
     --transition-global: 0.1s ease-in-out;
 
 
@@ -21,6 +16,13 @@
     --font-size-h2: 2rem;
     --line-height-body: 1.6;
     --line-height-heading: 1.2;
+}
+
+:root.dark{
+--body: #B0B3B8;
+  --heading: #E5E7EB;
+  --background: #212121;
+  --border: #555;
 }
 
 * {
@@ -77,6 +79,11 @@ button{
     cursor: pointer;
     transition: var(--transition-global);
 }
+
+
+.theme-button, .theme-button-mobile { color: var(--body); }
+
+.icon * { fill: currentColor; }
 
 a, link{
     transition: var(--transition-global);
