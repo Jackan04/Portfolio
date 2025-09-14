@@ -85,6 +85,7 @@ button{
     font-size: var(--font-size-base);
     cursor: pointer;
     transition: var(--transition-global);
+
 }
 
 .icon * { fill: currentColor; }
