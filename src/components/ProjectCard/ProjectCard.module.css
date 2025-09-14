@@ -1,0 +1,39 @@
+
+
+.projectCard {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.875rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+    margin: 3rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border);
+    background: var(--background);
+}
+
+
+img {
+    width: 7.75rem;
+}
+
+.projectCardContent {
+    width: 400px;
+}
+
+.projectCardTitle {
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.5rem;
+}
+
+.projectCardDescription {
+    font-size: var(--font-size-base);
+    color: var(--body);
+}
+
+.projectCardTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
