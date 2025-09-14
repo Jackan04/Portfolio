@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+header{
+    display: flex;
+    padding: 25px 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav, .header-controls{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
