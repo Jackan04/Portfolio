@@ -1,3 +1,5 @@
+/* Global Styling*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
@@ -77,22 +79,6 @@ h2 {
   line-height: var(--line-height-heading);
 }
 
-header{
-    display: flex;
-    padding: 1.6rem 1.8rem; 
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 3.125rem;
-    border: 1px solid var(--border);
-    box-shadow: var(--box-shadow); 
-    margin-top: 1.5rem; 
-    margin-left: 4rem; 
-    margin-right: 4rem; 
-    font-size: var(--font-size-base);
-}
-
-
-
 button{
     border: none;
     background-color: transparent;
@@ -101,17 +87,7 @@ button{
     transition: var(--transition-global);
 }
 
-
-.theme-button, .theme-button-mobile { color: var(--body); }
-
 .icon * { fill: currentColor; }
-
-nav > a, link{
-    transition: var(--transition-global);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-body);
-    cursor: pointer;
-}
 
 button:hover, a:hover, link:hover{
     opacity: 0.8;
@@ -121,22 +97,6 @@ button:active, a:active, link:active{
     transform: translateY(2px);
 }
 
-.hamburger, .header-controls-mobile, .theme-button-mobile, .dropdown-menu{
-    display: none;
-}
-
-.header-logo{
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-nav, .header-controls{
-    display: flex;
-    align-items: center;
-    gap: var(--gap-header);
-}
-
-
 /* Media Breakpoints */
 @media (max-width: 768px) {
 
@@ -145,43 +105,6 @@ nav, .header-controls{
     --font-size-h1: 2rem;
     --font-size-h2: 1.6rem;
     }
-
-
-  nav, .header-controls {
-    display: none;          
-  }
-  .hamburger, .header-controls-mobile, .theme-button-mobile {
-    display: block;        
-    display: flex;
-    align-items: center;
-    gap: var(--gap-header)
-  }
-
-  .hamburger{
-    font-size: 2rem;
-  }
-
-  .header-controls-mobile {
-    position: relative;
-}
-
-.dropdown-menu.open{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-header);
-    
-    position: absolute;
-    top: 100%; 
-    z-index: 10;
-
-    background-color: var(--background);
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10); 
-  
-}
 
 }
 

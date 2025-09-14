@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    padding: 1.6rem 1.8rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3.125rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--box-shadow);
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: var(--font-size-base);
+    background: var(--background);
+}
+
+.headerLogo {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--heading);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-header);
+}
+
+.headerControls {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-header);
+}
+
+.themeButton,
+.themeButtonMobile {
+    color: var(--body);
+    background: transparent;
+    border: none;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: var(--transition-global);
+}
+
+.icon * {
+    fill: currentColor;
+}
+
+.hamburger,
+.headerControlsMobile,
+.themeButtonMobile
+{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav,
+    .headerControls {
+        display: none;
+    }
+
+    .hamburger,
+    .headerControlsMobile,
+    .themeButtonMobile {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-header);
+    }
+
+    .hamburger {
+        font-size: 2rem;
+    }
+
+    .dropdownMenu {
+        display: none;
+    }
+
+    .headerControlsMobile {
+        position: relative;
+    }
+
+    /* Without the :global, it won't show */
+    .dropdownMenu:global(.open) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--gap-header);
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+        background-color: var(--background);
+        padding: 1rem 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
+    }
+
+    
+}
