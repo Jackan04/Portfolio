@@ -1,10 +1,35 @@
+:root{
+    --gap-header: 20px;
+
+    --body: #4A4A4A;
+    --heading: #111111;
+    --grey-light: #F1F1F1;
+    --background: #F9FAFB;
+    --border: #ccc;
+
+    --background-dark: #212121;
+    --body-dark: #B0B3B8;
+    --heading-dark: #E5E7EB;
+    --border-dark: #555555;
+
+    --transition-global: 0.1s ease-in-out;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+}
 
+p, h1, h2, a, link, button{
+    color: var(--body);
+    text-decoration: none;
 }
 
 header{
@@ -12,15 +37,66 @@ header{
     padding: 25px 30px;
     justify-content: space-around;
     align-items: center;
+    border-radius: 3.125rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 1rem;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-global);
+}
+
+a, link{
+    transition: var(--transition-global);
+}
+
+button:hover, a:hover, link:hover{
+    opacity: 0.8;
+}
+
+button:active, a:active, link:active{
+    transform: translateY(2px);
+}
+
+.hamburger, .header-controls-mobile, .theme-button-mobile{
+    display: none;
+}
+
+
+
 .header-logo{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 nav, .header-controls{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: var(--gap-header);
+}
+
+@media (max-width: 768px) {
+
+  nav, .header-controls {
+    display: none;          
+  }
+  .hamburger, .header-controls-mobile, .theme-button-mobile {
+    display: block;        
+    display: flex;
+    align-items: center;
+    gap: var(--gap-header)
+  }
+
+  .hamburger{
+    font-size: 2rem;
+  }
+
 }
