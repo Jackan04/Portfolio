@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import React, {useState} from 'react';
-import MoonIcon from '../../assets/icons/moon.svg?react'
-import SunIcon from '../../assets/icons/sun.svg?react'
+import ToggleOnIcon from '../../assets/icons/toggle-on.svg?react'
+import ToggleOffIcon from '../../assets/icons/toggle-off.svg?react'
+import HamburgerIcon from '../../assets/icons/hamburger.svg?react'
+
+
 import styles from './Header.module.css';
 
 export default function Header(){
@@ -13,6 +16,7 @@ export default function Header(){
             const nextTheme = prevTheme === 'light' ? 'dark' : 'light';
             document.documentElement.classList.toggle('dark', nextTheme === 'dark');
             return nextTheme;
+
         });
     }
 
@@ -30,15 +34,18 @@ export default function Header(){
                     className={styles.themeButtonMobile}
                     onClick={toggleTheme}
                 >
-                    {theme === "light" ? <MoonIcon className={styles.icon} /> : <SunIcon className={styles.icon} />}
+                    {theme === "light" ? <ToggleOffIcon className={styles.icon} /> : <ToggleOnIcon className={`${styles.icon} ${styles.toggleOn}`} />}
                 </button>
 
-                <button className={styles.hamburger} onClick={() => setDropdownOpen(open => !open)}>☰</button>
-                <div className={`${styles.dropdownMenu} ${dropdownOpen ? 'open' : ''}`}>
-                    <Link to="/">Home</Link>
-                    <Link to="/projects">Projects</Link>
-                    <a href="mailto: jacob.asker@icloud.com">Contact</a>
-                </div>
+                    <button className={styles.hamburger} onClick={() => setDropdownOpen(open => !open)}>
+                        <HamburgerIcon className={styles.icon} />
+                    </button>
+
+                    <div className={`${styles.dropdownMenu} ${dropdownOpen ? 'open' : ''}`}>
+                        <Link to="/">Home</Link>
+                        <Link to="/projects">Projects</Link>
+                        <a href="mailto: jacob.asker@icloud.com">Contact</a>
+                    </div>
 
             </div>
                     
@@ -47,7 +54,7 @@ export default function Header(){
                 <a href="mailto: jacob.asker@icloud.com">Contact</a>
                 
                 <button className={styles.themeButton} onClick={toggleTheme}>
-                    {theme === "light" ? <MoonIcon className={styles.icon} /> : <SunIcon className={styles.icon} />}
+                    {theme === "light" ? <ToggleOffIcon className={styles.icon} /> : <ToggleOnIcon className={`${styles.icon} ${styles.toggleOn}`} />}
                 </button>
             </div>
         </header>
