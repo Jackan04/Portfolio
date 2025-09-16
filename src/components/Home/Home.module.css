@@ -2,3 +2,34 @@
     width: 7rem;
     border-radius: var(--border-radius);
 }
+
+
+.icon { 
+    /* For icons from LinkCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
+    
+    width: 1.125rem;
+    height: 1.125rem;
+    aspect-ratio: 1/1;
+    fill: #4A4A4A;
+}
+
+.linkCards{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+
+}
+
+.linksHeading{
+    color: var(--body);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}

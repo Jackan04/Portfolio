@@ -13,13 +13,16 @@
     --border: #F1F1F1;
     --box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
 
-    --transition-global: 0.1s ease-in-out;
-
+    
     --font-size-base: 16px;
     --font-size-h1: 2.5rem;
     --font-size-h2: 2rem;
     --line-height-body: 1.6;
     --line-height-heading: 1.2;
+    
+    --transition-global: 0.1s ease-in-out;
+    --hover-global: 0.8;
+    --active-global: translateY(2px);
 }
 
 :root.dark{
@@ -88,14 +91,16 @@ button{
 
 }
 
-.icon * { fill: currentColor; }
+.icon * { 
+fill: currentColor; 
+}
 
 button:hover, a:hover, link:hover{
-    opacity: 0.8;
+    opacity: var(--hover-global);
 }
 
 button:active, a:active, link:active{
-    transform: translateY(2px);
+    transform: var(--active-global);
 }
 
 /* Media Breakpoints */

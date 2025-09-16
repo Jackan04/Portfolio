@@ -1,0 +1,24 @@
+.card{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #CCC;
+    background: var(--Grey-Light, #F1F1F1);
+    transition: var(--transition-global);
+}
+
+.card:hover{
+    cursor: pointer;
+    opacity: var(--hover-global);
+}
+
+.card:active{
+    transform: var(--active-global);
+}
+
+/* Ignore theming */
+.title{
+  color: #4A4A4A !important;
+}
