@@ -32,7 +32,7 @@ export default function Projects(){
     return(
     <main>
         <div className={styles.projectFilters}>
-        <button className={styles.filterButton} onClick={() => filterProjects(null)}>All</button>
+        <button className={`${styles.filterButton} ${styles.button}`} onClick={() => filterProjects(null)}>All</button>
         {categories.map(category => <button className={styles.filterButton} key={category} onClick={() => filterProjects(category)}>{category}</button>)}
 
         </div>

@@ -88,18 +88,17 @@ button{
     font-size: var(--font-size-base);
     cursor: pointer;
     transition: var(--transition-global);
-
 }
 
 .icon * { 
 fill: currentColor; 
 }
 
-button:hover, a:hover, link:hover{
+.button,button:hover, a:hover, link:hover{
     opacity: var(--hover-global);
 }
 
-button:active, a:active, link:active{
+.button, button:active, a:active, link:active{
     transform: var(--active-global);
 }
 

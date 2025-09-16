@@ -9,16 +9,16 @@
     transition: var(--transition-global);
 }
 
-.card:hover{
-    cursor: pointer;
-    opacity: var(--hover-global);
-}
-
-.card:active{
-    transform: var(--active-global);
-}
-
-/* Ignore theming */
 .title{
+/* Ignore theming */
   color: #4A4A4A !important;
+  font-size: var(--font-size-base);
+}
+
+
+@media (max-width: 768px){
+    .title{
+
+  font-size: var(--font-size-base);
+}
 }

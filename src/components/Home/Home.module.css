@@ -1,9 +1,32 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.welcomeText{
+    max-width: 35rem;
+}
+
 .profileImage{
     width: 7rem;
     border-radius: var(--border-radius);
+    text-align: left;
+}
+
+.contentTop{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 
+
+/* Links Section */
 .icon { 
     /* For icons from LinkCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
     
@@ -17,8 +40,7 @@
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    align-self: stretch;
-
+    flex-wrap: wrap;
 }
 
 .linksHeading{
@@ -32,4 +54,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
+}
+
+
+@media (max-width: 768px){
+
 }
