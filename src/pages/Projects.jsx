@@ -40,6 +40,7 @@ export default function Projects(){
         <div className={styles.projectCards}>
             {visibleCards.map(card =><ProjectCard key={card.title} {...card} />)}
         </div>
+        
     </main>
     )
 }

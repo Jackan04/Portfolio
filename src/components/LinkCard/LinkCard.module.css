@@ -10,15 +10,14 @@
 }
 
 .title{
-/* Ignore theming */
+  /* Ignore theming */
   color: #4A4A4A !important;
   font-size: var(--font-size-base);
 }
 
 
 @media (max-width: 768px){
-    .title{
-
+  .title{
   font-size: var(--font-size-base);
-}
+  }
 }

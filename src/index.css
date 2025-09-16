@@ -63,7 +63,7 @@ p, h1, h2, a, link, button{
 
 .heading{
     color: var(--heading);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -87,11 +87,14 @@ button{
     background-color: transparent;
     font-size: var(--font-size-base);
     cursor: pointer;
-    transition: var(--transition-global);
 }
 
 .icon * { 
-fill: currentColor; 
+    fill: currentColor; 
+}
+
+.button,button:hover, a:hover, link:hover{
+    transition: var(--transition-global);
 }
 
 .button,button:hover, a:hover, link:hover{

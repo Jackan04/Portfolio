@@ -29,11 +29,17 @@
 /* Links Section */
 .icon { 
     /* For icons from LinkCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
-    
     width: 1.125rem;
     height: 1.125rem;
     aspect-ratio: 1/1;
     fill: #4A4A4A;
+}
+
+.iconCreative{
+     /* For icons from CreativeCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
+     width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 5px;
 }
 
 .linkCards{
@@ -43,7 +49,13 @@
     flex-wrap: wrap;
 }
 
-.linksHeading{
+.creativeContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading{
     color: var(--body);
     font-size: 1.125rem;
     font-weight: 500;
