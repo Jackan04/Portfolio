@@ -20,6 +20,10 @@ export default function Header(){
         });
     }
 
+    function closeDropDown(){
+        setDropdownOpen(false)
+    }
+
     return(
         <header className={styles.header}>
             <Link to="/" className={styles.headerLogo}>Jacob Asker</Link>
@@ -42,9 +46,9 @@ export default function Header(){
                     </button>
 
                     <div className={`${styles.dropdownMenu} ${dropdownOpen ? 'open' : ''}`}>
-                        <Link to="/">Home</Link>
-                        <Link to="/projects">Projects</Link>
-                        <a href="mailto: jacob.asker@icloud.com">Contact</a>
+                        <Link to="/" onClick={() => setDropdownOpen(false)}>Home</Link>
+                        <Link to="/projects" onClick={() => setDropdownOpen(false)}>Projects</Link>
+                        <a href="mailto: jacob.asker@icloud.com" onClick={() => setDropdownOpen(false)}>Contact</a>
                     </div>
 
             </div>
