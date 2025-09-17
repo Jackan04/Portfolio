@@ -107,6 +107,11 @@ button{
     transform: var(--active-global);
 }
 
+.inlineLink{
+    /* color: var(--accent-dark); */
+    text-decoration: underline;
+}
+
 /* Media Breakpoints */
 @media (max-width: 768px) {
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from '../components/Home/Home.module.css'
 import profile from '../assets/images/profile.jpeg'
 import SocialCard from '../components/LinkCard/LinkCard'
@@ -21,7 +22,11 @@ export default function Home(){
                     <div className={styles.contentTop}>
                         <img className={styles.profileImage} src={profile} alt="Profile Image" />
                         <h1 className={styles.heading}>Hi, I’m Jacob</h1>
-                        <p className={styles.welcomeText}>I’m an Informatics student at Högskolan Väst in Sweden, fascinated by consumer tech, software development, and design. Outside of tech, I’m into cars, strength training, photography, and creative side projects.</p>
+                        <p className={styles.welcomeText}>
+                            I’m an Informatics student at Högskolan Väst in Sweden, passionate about consumer tech, software development, and design.  
+                            Outside of tech, I enjoy cars, wellness, photography, and creative side projects.  
+                            Feel free to explore some of my <Link to="/projects" className="inlineLink">projects</Link>.
+                        </p>
                     </div>
 
                     <div className={styles.creativeContainer}>
@@ -35,8 +40,8 @@ export default function Home(){
                     <div className={styles.linksContainer}>
                         <h2 className={styles.heading}>Links</h2>
                         <div className={styles.linkCards}>
-                        <SocialCard icon={<MailIcon className={styles.icon}/>} title="Mail" href="mailto: jacob.asker@icloud.com"></SocialCard>
-                        <SocialCard icon={<FileIcon className={styles.icon}/>} title="Resume"></SocialCard>
+                        <SocialCard icon={<MailIcon className={styles.icon}/>} title="Email" href="mailto: jacob.asker@icloud.com"></SocialCard>
+                        <SocialCard icon={<FileIcon className={styles.icon}/>} title="Resume" href="#"></SocialCard>
                         <SocialCard icon={<LinkedInIcon className={styles.icon}/>} title="LinkedIn" href="https://www.linkedin.com/in/jacob-asker-a096a7352/"></SocialCard>
                         <SocialCard icon={<TwitterIcon className={styles.icon}/>} title="X" href="https://x.com/jacob_aske15923"></SocialCard>
                     </div>

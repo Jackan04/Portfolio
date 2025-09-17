@@ -24,7 +24,6 @@
     flex-wrap: wrap;
 }
 
-
 /* Links Section */
 .icon { 
     /* For icons from LinkCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
