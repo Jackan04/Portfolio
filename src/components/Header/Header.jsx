@@ -9,19 +9,17 @@ import styles from './Header.module.css';
 
 export default function Header(){
     const [dropdownOpen, setDropdownOpen] = useState(false)
-    
     const [theme, setTheme] = useState(() => {
         return localStorage.getItem("theme") || "light"
     })
 
-
-     useEffect(() => {
+    useEffect(() => {
         document.documentElement.classList.toggle('dark', theme === 'dark'); // Sets class of "dark" if condition returns true, else it removes the class from <html>-element
         localStorage.setItem('theme', theme);
     }, [theme]);
     
     function toggleTheme(){
-        setTheme((prevTheme) => prevTheme === 'light' ? 'dark' : 'light');
+        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
     }
     
 
@@ -35,23 +33,19 @@ export default function Header(){
             </nav>
 
             <div className={styles.headerControlsMobile}>
-                <button 
-                    className={styles.themeButtonMobile}
-                    onClick={toggleTheme}
-                >
+                <button className={styles.themeButtonMobile} onClick={toggleTheme}>
                     {theme === "light" ? <ToggleOffIcon className={styles.icon} /> : <ToggleOnIcon className={`${styles.icon} ${styles.toggleOn}`} />}
                 </button>
 
-                    <button className={styles.hamburger} onClick={() => setDropdownOpen(open => !open)}>
-                        <HamburgerIcon className={styles.icon} />
-                    </button>
+                <button className={styles.hamburger} onClick={() => setDropdownOpen(open => !open)}>
+                    <HamburgerIcon className={styles.icon} />
+                </button>
 
-                    <div className={`${styles.dropdownMenu} ${dropdownOpen ? 'open' : ''}`}>
-                        <Link to="/" onClick={() => setDropdownOpen(false)}>Home</Link>
-                        <Link to="/projects" onClick={() => setDropdownOpen(false)}>Projects</Link>
-                        <a href="mailto: jacob.asker@icloud.com" onClick={() => setDropdownOpen(false)}>Contact</a>
-                    </div>
-
+                <div className={`${styles.dropdownMenu} ${dropdownOpen ? 'open' : ''}`}>
+                    <Link to="/" onClick={() => setDropdownOpen(false)}>Home</Link>
+                    <Link to="/projects" onClick={() => setDropdownOpen(false)}>Projects</Link>
+                    <a href="mailto: jacob.asker@icloud.com" onClick={() => setDropdownOpen(false)}>Contact</a>
+                </div>
             </div>
                     
 

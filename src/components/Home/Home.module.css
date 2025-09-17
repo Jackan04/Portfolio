@@ -25,7 +25,6 @@
 }
 
 
-
 /* Links Section */
 .icon { 
     /* For icons from LinkCard.jsx, they are sent as props and therefore lives in the Home.jsx component */
@@ -33,6 +32,7 @@
     height: 1.125rem;
     aspect-ratio: 1/1;
     fill: #4A4A4A;
+    stroke: #4A4A4A;
 }
 
 .iconCreative{
@@ -40,6 +40,15 @@
      width: 1.4rem;
     height: 1.4rem;
     margin-right: 5px;
+    /* Inherit theme color */
+    color: var(--body);
+}
+
+/* Make the SVG paths/strokes inherit the current text color for themed icons */
+.iconCreative *,
+.iconCreative svg {
+    fill: currentColor;
+    stroke: currentColor;
 }
 
 .linkCards{
@@ -66,9 +75,4 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
-}
-
-
-@media (max-width: 768px){
-
 }
