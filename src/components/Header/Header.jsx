@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ToggleOnIcon from '../../assets/icons/toggle-on.svg?react'
 import ToggleOffIcon from '../../assets/icons/toggle-off.svg?react'
 import HamburgerIcon from '../../assets/icons/hamburger.svg?react'
@@ -8,21 +8,22 @@ import HamburgerIcon from '../../assets/icons/hamburger.svg?react'
 import styles from './Header.module.css';
 
 export default function Header(){
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState(() => {
+        return localStorage.getItem("theme") || "light"
+    })
+
     const [dropdownOpen, setDropdownOpen] = useState(false)
 
+     useEffect(() => {
+        
+        document.documentElement.classList.toggle('dark', theme === 'dark'); // Sets class of "dark" if condition returns true, else it removes the class from <html>-element
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+    
     function toggleTheme(){
-        setTheme((prevTheme) => {
-            const nextTheme = prevTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.classList.toggle('dark', nextTheme === 'dark');
-            return nextTheme;
-
-        });
+        setTheme((prevTheme) => prevTheme === 'light' ? 'dark' : 'light');
     }
-
-    function closeDropDown(){
-        setDropdownOpen(false)
-    }
+    
 
     return(
         <header className={styles.header}>
