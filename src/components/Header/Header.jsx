@@ -8,14 +8,14 @@ import HamburgerIcon from '../../assets/icons/hamburger.svg?react'
 import styles from './Header.module.css';
 
 export default function Header(){
+    const [dropdownOpen, setDropdownOpen] = useState(false)
+    
     const [theme, setTheme] = useState(() => {
         return localStorage.getItem("theme") || "light"
     })
 
-    const [dropdownOpen, setDropdownOpen] = useState(false)
 
      useEffect(() => {
-        
         document.documentElement.classList.toggle('dark', theme === 'dark'); // Sets class of "dark" if condition returns true, else it removes the class from <html>-element
         localStorage.setItem('theme', theme);
     }, [theme]);
