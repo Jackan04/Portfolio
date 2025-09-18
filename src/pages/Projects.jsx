@@ -21,9 +21,9 @@ export default function cards(){
         {categories.map(category => <button className={styles.filterButton} key={category} onClick={() => filtercards(category)}>{category}</button>)}
 
         </div>
-        {/*{...card} is used to pass all the props from the cards array, less manual writing within the jsx itself */}
         <div className={styles.projectCards}>
             {visibleCards.map(card =><ProjectCard key={card.title} {...card} />)}
+            {/*{...card} is used to pass all the props from the cards array, less manual writing within the jsx itself */}
         </div>
         
     </main>
