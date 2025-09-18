@@ -1,12 +1,12 @@
 import { useState } from "react"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
+import ProjectData from '../data/projects.js'
 import styles from '../components/ProjectCard/ProjectCard.module.css'
-import ProjectCards from '../data/projects.js'
 
 export default function cards(){
     const categories = ["Coding", "Design"]
     const [filter, setFilter] = useState(null);
-    const cards = [...ProjectCards]
+    const cards = [...ProjectData]
 
     function filtercards(category){
         setFilter(category);
