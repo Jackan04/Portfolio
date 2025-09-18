@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard/ProjectCard"
 import styles from '../components/ProjectCard/ProjectCard.module.css'
 import TaskManagerImage from '../assets/images/task-manager.jpeg'
 import DesignCaseImage from '../assets/images/design-case.png'
+import UtilityAppImage from '../assets/images/utility-app.jpeg'
 
 export default function Projects(){
     const categories = ["Coding", "Design"]
@@ -23,6 +24,13 @@ export default function Projects(){
             title: "Task Manager",
             description: "A simple, modern task management app built using vanilla JavaScript, HTML, and CSS. All data is stored locally in your browser using localStorage, ensuring privacy and persistence across sessions."
             },
+            {
+                category: "Coding",
+                src: UtilityAppImage,
+                href: "git@github.com:Jackan04/Utility-app.git",
+                title: "Utility App",
+                description: "A growing collection of handy tools, starting with a QR code generator and Pomodoro timer—all in one place.",
+            }
     ]
        
     function filterProjects(category){
