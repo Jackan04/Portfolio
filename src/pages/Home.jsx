@@ -9,6 +9,8 @@ import LinkedInIcon from '../assets/icons/linkedin.svg?react'
 import FileIcon from '../assets/icons/file.svg?react'
 import GitHubIcon from '../assets/icons/github.svg?react'
 import UnsplashIcon from '../assets/icons/unsplash.svg?react'
+import GumroadIcon from '../assets/icons/gumroad.svg?react'
+
 
 export default function Home(){
     
@@ -32,6 +34,7 @@ export default function Home(){
                         <h2 className={styles.heading}>Across the Web</h2>
                         <CreativeCard href="https://unsplash.com/@jacobasker04" icon={<UnsplashIcon className={styles.iconCreative}/>} title="Unsplash" description="My photography"></CreativeCard>
                         <CreativeCard href="https://github.com/Jackan04?tab=repositories" icon={<GitHubIcon className={styles.iconCreative}/>} title="GitHub" description="My coding projects"></CreativeCard>
+                        <CreativeCard href="https://askerjacob.gumroad.com" icon={<GumroadIcon className={styles.iconCreative}/>} title="Gumroad" description="My wallpapers"></CreativeCard>
                     </div>
                     
                     
