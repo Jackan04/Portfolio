@@ -14,15 +14,15 @@ const projects = [
         category: "Coding",
         src: TaskManagerImage,
         href: "https://github.com/Jackan04/Task-Manager",
-        title: "Task Manager",
-        description: "A simple, modern project and task management app built using vanilla JavaScript, HTML, and CSS."
+        title: "Simple Project Manager",
+        description: "A project management app that helps you organize multiple projects, create task lists, and track tasks. Includes task notes, due dates and saves your data locally in the browser."
     },
     {
         category: "Coding",
         src: ToDoAppImage,
         href: "https://github.com/Jackan04/Task-app",
         title: "Simple Todo List",
-        description: "A simple, modern task management web app built with vanilla JavaScript, HTML, and CSS."
+        description: "A minimal, delightful todo app with due dates, completion tracking, and task statistics. Features local storage persistence in the browser."
     }
 ];
 

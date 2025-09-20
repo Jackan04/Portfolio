@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     padding: 1.875rem 1.25rem;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 4rem;
     position: relative;
     border-radius: var(--border-radius);
