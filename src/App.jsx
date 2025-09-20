@@ -1,16 +1,17 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <HashRouter>
+    <>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        {/* other routes */}
       </Routes>
-    </HashRouter>
+    </>
   );
 }
 
