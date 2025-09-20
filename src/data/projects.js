@@ -1,6 +1,6 @@
 import TaskManagerImage from '../assets/images/task-manager.jpeg'
 import DesignCaseImage from '../assets/images/design-case.png'
-import UtilityAppImage from '../assets/images/utility-app.jpeg'
+import ToDoAppImage from '../assets/images/todo-app.jpeg'
 
 const projects = [
     {
@@ -15,14 +15,14 @@ const projects = [
         src: TaskManagerImage,
         href: "https://github.com/Jackan04/Task-Manager",
         title: "Task Manager",
-        description: "A simple, modern task management app built using vanilla JavaScript, HTML, and CSS. All data is stored locally in your browser using localStorage, ensuring privacy and persistence across sessions."
+        description: "A simple, modern project and task management app built using vanilla JavaScript, HTML, and CSS."
     },
     {
         category: "Coding",
-        src: UtilityAppImage,
-        href: "https://github.com/Jackan04/Utility-app",
-        title: "Utility App",
-        description: "A growing collection of handy tools, starting with a QR code generator and Pomodoro timer—all in one place."
+        src: ToDoAppImage,
+        href: "https://github.com/Jackan04/Task-app",
+        title: "Simple Todo List",
+        description: "A simple, modern task management web app built with vanilla JavaScript, HTML, and CSS."
     }
 ];
 

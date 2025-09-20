@@ -30,8 +30,8 @@ export default function Home(){
 
                     <div className={styles.creativeContainer}>
                         <h2 className={styles.heading}>Across the Web</h2>
-                        <CreativeCard href="https://unsplash.com/@jacobasker04" icon={<UnsplashIcon className={styles.iconCreative}/>} title="Unsplash" description="Where I showcase my photography"></CreativeCard>
-                        <CreativeCard href="https://github.com/Jackan04?tab=repositories" icon={<GitHubIcon className={styles.iconCreative}/>} title="GitHub" description="My past and ongoing coding projects"></CreativeCard>
+                        <CreativeCard href="https://unsplash.com/@jacobasker04" icon={<UnsplashIcon className={styles.iconCreative}/>} title="Unsplash" description="My photography"></CreativeCard>
+                        <CreativeCard href="https://github.com/Jackan04?tab=repositories" icon={<GitHubIcon className={styles.iconCreative}/>} title="GitHub" description="My coding projects"></CreativeCard>
                     </div>
                     
                     
