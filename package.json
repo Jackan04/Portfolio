@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist"
 
   },
-  "homepage": "https://jackan04.github.io/portfolio",
+  "homepage": "https://jackan04.github.io/Portfolio",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
