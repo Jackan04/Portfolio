@@ -4,12 +4,12 @@ import profile from '../assets/images/profile.jpeg'
 import SocialCard from '../components/LinkCard/LinkCard'
 import CreativeCard from '../components/CreativeCard/CreativeCard'
 import MailIcon from '../assets/icons/envelope.svg?react'
-import ThreadsIcon from '../assets/icons/threads.svg?react'
 import LinkedInIcon from '../assets/icons/linkedin.svg?react'
 import FileIcon from '../assets/icons/file.svg?react'
 import GitHubIcon from '../assets/icons/github.svg?react'
 import UnsplashIcon from '../assets/icons/unsplash.svg?react'
 import GumroadIcon from '../assets/icons/gumroad.svg?react'
+import XIcon from '../assets/icons/x.svg?react'
 
 
 export default function Home(){
@@ -43,9 +43,9 @@ export default function Home(){
                         <h2 className={styles.heading}>Elsewhere</h2>
                         <div className={styles.linkCards}>
                         <SocialCard icon={<MailIcon className={styles.icon}/>} title="Email" href="mailto: jacob.asker@icloud.com"></SocialCard>
-                        <SocialCard icon={<ThreadsIcon className={styles.icon}/>} title="Threads" href="https://www.threads.com/@askerjacob"></SocialCard>
+                        <SocialCard icon={<XIcon className={styles.icon}/>} title="X" href="https://x.com/jacob_aske15923"></SocialCard>
                         <SocialCard icon={<LinkedInIcon className={styles.icon}/>} title="LinkedIn" href="https://www.linkedin.com/in/jacob-asker-a096a7352/"></SocialCard>
-                        <SocialCard icon={<FileIcon className={styles.icon}/>} title="Resume" href="/Portfolio/resume.pdf"></SocialCard>
+                        <SocialCard icon={<FileIcon className={styles.icon}/>} title="Resume" href="/resume.pdf"></SocialCard>
                     </div>
                 </div>
             </div>
