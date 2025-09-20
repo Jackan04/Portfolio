@@ -1,23 +1,16 @@
-import { Routes, Route } from 'react-router-dom'
-import Header from "./components/Header/Header"
-import Projects from "./pages/Projects"
-import Home from "./pages/Home"
-
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
-
   return (
-    <>
-      <Header></Header>
-    
-      
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-
-    </>
-  )
+    </HashRouter>
+  );
 }
 
-export default App
+export default App;
