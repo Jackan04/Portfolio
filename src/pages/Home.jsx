@@ -22,12 +22,13 @@ export default function Home(){
                 </div>
                     <div className={styles.contentTop}>
                         <img className={styles.profileImage} src={profile} alt="Profile Image" />
-                        <h1 className={styles.heading}>Hi, I’m Jacob</h1>
-                        <p className={styles.welcomeText}>
-                            I’m an Informatics student at Högskolan Väst in Sweden, passionate about consumer tech, software development, and design.  
-                            Outside of tech, I enjoy cars, hiking, strength training and photography.
-                            Feel free to explore some of my <Link to="/projects" className="inlineLink">projects</Link>.
-                        </p>
+                    <h1 className={styles.heading}>Hi, I’m Jacob</h1>
+                    <p className={styles.welcomeText}>
+                        I’m an Informatics student at Högskolan Väst in Sweden, passionate about consumer tech, software development, and design.  
+                        Outside of tech, I enjoy cars, hiking, strength training and photography.
+                        Feel free to explore some of my <Link to="/projects" className="inlineLink">projects</Link>.
+                    </p>
+
                     </div>
 
                     <div className={styles.creativeContainer}>
