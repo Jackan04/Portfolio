@@ -19,10 +19,6 @@
     color: var(--heading);
 }
 
-.headerLogo:hover{
-    color: var(--accent-dark);
-}
-
 .nav {
     display: flex;
     align-items: center;

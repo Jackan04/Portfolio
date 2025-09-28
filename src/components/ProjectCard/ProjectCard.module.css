@@ -40,7 +40,7 @@
     gap: 5px;
     background-color: var(--grey-light);
     color: var(--grey-dark);
-    padding: 12px 16px;
+    padding: 12px 16px; 
     border-radius: var(--border-radius);
     font-size: 12px;
 }
@@ -48,8 +48,6 @@
 .categoryLabelIcon{
     width: 1rem;
     fill: var(--grey-dark);
-
-
 }
 
 .projectCardTitle {
@@ -75,13 +73,15 @@
 }
 
 .filterButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     background-color: var(--grey-light);
     color: var(--grey-dark);
     padding: 12px 16px;
     border-radius: var(--border-radius);
     font-size: var(--font-size-base);
-    border: 1px solid var(--border-dark);
-
 }
 
 .projectCards{

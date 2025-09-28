@@ -2,6 +2,8 @@ import { useState } from "react"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import ProjectData from '../data/projects.js'
 import styles from '../components/ProjectCard/ProjectCard.module.css'
+import CodeIcon from '../assets/icons/code.svg?react'
+import SwatchbookIcon from '../assets/icons/swatchbook.svg?react'
 
 export default function cards(){
     const categories = ["Coding", "Design"]
@@ -18,7 +20,10 @@ export default function cards(){
     <main>
          <div className={styles.projectFilters}>
             <button className={`${styles.filterButton} ${styles.button}`} onClick={() => filtercards(null)}>All</button>        
-            {categories.map(category => <button className={styles.filterButton} key={category} onClick={() => filtercards(category)}>{category}</button>)}
+                {categories.map(category => <button className={styles.filterButton} key={category} onClick={() => filtercards(category)}>
+                {category === "Coding" ? <CodeIcon className={styles.categoryLabelIcon}/> : <SwatchbookIcon className={styles.categoryLabelIcon}/>}
+                {category}
+            </button>)}
         </div>
     
 
