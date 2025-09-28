@@ -1,12 +1,25 @@
-.cardHeader{
-    display: flex;
-    align-items: center;
-}
-
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.2rem;
+}
+
+.cardHeader{
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+.icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: var(--body);
+}
+
+.icon *,
+.icon svg {
+    fill: currentColor;
+    stroke: currentColor;
 }

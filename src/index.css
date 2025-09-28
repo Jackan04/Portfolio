@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --gap-header: 20px;
-    --border-radius: 10px;
-
     --body: #4A4A4A;
     --heading: #111111;
     --grey-light: #F1F1F1;
@@ -17,6 +14,16 @@
     --accent-dark: #008DFF;
     --accent-light: #E4F2FE;
     --box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+    
+    --border-radius: 0.625rem;
+    --gap-sm: 0.625rem;
+    --gap-md: 0.9375rem;
+    --gap-lg: 1.25rem;
+
+    --padding-button: 0.75rem 1rem;
+    --padding-sm: 0.625rem;
+    --padding-md: 0.9375rem;
+    --padding-lg: 1.25rem;
 
     --font-size-base: 16px;
     --font-size-h1: 2.5rem;

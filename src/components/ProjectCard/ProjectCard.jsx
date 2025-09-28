@@ -20,7 +20,7 @@ export default function ProjectCard(props){
 
                 <p className={styles.projectCategoryLabel}>
                     {props.category === "Coding" ? <CodeIcon className={styles.categoryLabelIcon}/> : <SwatchbookIcon className={styles.categoryLabelIcon}/>}
-                    {props.category}
+                    
                 </p>
             
             </div>

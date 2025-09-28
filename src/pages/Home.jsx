@@ -8,7 +8,6 @@ import LinkedInIcon from '../assets/icons/linkedin.svg?react'
 import FileIcon from '../assets/icons/file.svg?react'
 import GitHubIcon from '../assets/icons/github.svg?react'
 import UnsplashIcon from '../assets/icons/unsplash.svg?react'
-import GumroadIcon from '../assets/icons/gumroad.svg?react'
 import XIcon from '../assets/icons/x.svg?react'
 
 

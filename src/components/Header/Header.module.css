@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    padding: 1.6rem 1.8rem;
+    padding: 1.7rem 1.8rem;
     justify-content: space-between;
     align-items: center;
     border-radius: 3.125rem;
@@ -22,14 +22,14 @@
 .nav {
     display: flex;
     align-items: center;
-    gap: var(--gap-header);
+    gap: var(--gap-lg);
 }
 
 .headerControls {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--gap-header);
+    gap: var(--gap-lg);
 }
 
 .themeButton,
@@ -47,7 +47,11 @@
     stroke: currentColor;
 }
 
-.icon { width: 1.4rem; height: 1.4rem; display: block; }
+.icon { 
+    width: 1.4rem; 
+    height: 1.4rem; 
+    display: block; 
+}
 
 .toggleOn{
     color: #38C25D;
@@ -78,7 +82,7 @@
     .themeButtonMobile {
         display: flex;
         align-items: center;
-        gap: var(--gap-header);
+        gap: var(--gap-lg);
     }
 
     .hamburger {
@@ -98,7 +102,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--gap-header);
+        gap: var(--gap-lg);
         position: absolute;
         top: 100%;
         right: 0px;
