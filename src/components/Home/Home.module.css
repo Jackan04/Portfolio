@@ -38,12 +38,6 @@
     gap: var(--gap-sm);
 }
 
-.heading{
-    color: var(--body);
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
 .linksContainer{
     display: flex;
     flex-direction: column;

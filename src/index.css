@@ -5,7 +5,6 @@
 :root{
     --body: #4A4A4A;
     --heading: #111111;
-    --grey-light: #F1F1F1;
     --background: #F9FAFB;
     --border: #F1F1F1;
     --border-dark: #ccc;
@@ -25,9 +24,8 @@
     --padding-md: 0.9375rem;
     --padding-lg: 1.25rem;
 
-    --font-size-base: 16px;
-    --font-size-h1: 2.5rem;
-    --font-size-h2: 2rem;
+    --font-size-base: 1rem;
+    --font-size-h2: 1.2rem;
     --line-height-body: 1.6;
     --line-height-heading: 1.2;
     
@@ -66,30 +64,21 @@ main{
     margin: 2rem;
 }
 
-p, h1, h2, a, link, button{
+p, a, link, button{
     color: var(--body);
     text-decoration: none;
 }
 
-.heading{
-    color: var(--heading);
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-p{
+p {
     font-size: var(--font-size-base);
     line-height: var(--line-height-body);
 }
 
-h1{
-    font-size: var(--font-size-h1);
+.heading, h2{
+    color: var(--body);
+    font-size: var(--font-size-h2);
+    font-weight: 500;
     line-height: var(--line-height-heading);
-}
-
-h2 {
-  font-size: var(--font-size-h2);
-  line-height: var(--line-height-heading);
 }
 
 button{
@@ -116,18 +105,16 @@ button{
 }
 
 .inlineLink{
-    /* color: var(--accent-dark); */
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
 /* Media Breakpoints */
 @media (max-width: 768px) {
 
-    :root {
-    --font-size-base: 14px;
-    --font-size-h1: 2rem;
-    --font-size-h2: 1.6rem;
-    }
+:root {
+--font-size-base: 14px;
+--font-size-h2: 1.1rem;
+}
 
 }
 

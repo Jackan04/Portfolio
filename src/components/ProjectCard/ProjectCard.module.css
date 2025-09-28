@@ -19,7 +19,7 @@
 }
 
 .projectCardIconWrapper{
-    width: 150px;
+    width: 9.375rem;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -30,7 +30,7 @@
 }
 
 .projectCardContent {
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .projectCategoryLabel{
@@ -51,19 +51,12 @@
 }
 
 .projectCardTitle {
-    font-size: var(--font-size-h2);
     margin-bottom: 0.5rem;
-
 }
 
 .projectCardDescription {
     font-size: var(--font-size-base);
     color: var(--body);
-}
-
-.projectCardTitle{
-    font-size: 1.2rem;
-    font-weight: 500;
 }
 
 .filterButton {
@@ -95,25 +88,17 @@
     .projectCard{
         display: flex;
         justify-content: start;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .projectCardIconWrapper {
-        width: 80px;
-        /* aspect-ratio: 1 / 1;
-        overflow: hidden;
-        border-radius: var(--border-radius);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #E4F2FE; */
+        width: 5rem;
     }
 
-        .projectCardIcon {
-            width: 2.5rem;
-            aspect-ratio: 1 / 1;
-            fill: #008DFF;
-            ;
-        }
+    .projectCardIcon {
+        width: 2.5rem;
+        aspect-ratio: 1 / 1;
+        fill: #008DFF;
+    }
 }
 

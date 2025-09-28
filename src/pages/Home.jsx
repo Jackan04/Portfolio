@@ -21,7 +21,7 @@ export default function Home(){
                 </div>
                     <div className={styles.contentTop}>
                         <img className={styles.profileImage} src={profile} alt="Profile Image" />
-                    <h1 className={styles.heading}>Hi, I’m Jacob</h1>
+                    <h2 className={styles.heading}>Hi, I’m Jacob</h2>
                         <p className={styles.welcomeText}>
                             I’m an Informatics student at Högskolan Väst in Sweden, passionate about consumer tech, software development, and design.  
                             Outside of tech, I enjoy cars, hiking, strength training and photography.

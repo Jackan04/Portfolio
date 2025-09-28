@@ -17,6 +17,6 @@
 }
 
 .title{
-  color: var(--grey-dark) !important;
+  color: var(--grey-dark) ;
   font-size: var(--font-size-base);
 }
