@@ -21,11 +21,11 @@ export default function Home(){
                 </div>
                     <div className={styles.contentTop}>
                         <img className={styles.profileImage} src={profile} alt="Profile Image" />
-                    <h2 className={styles.heading}>Hi, I’m Jacob</h2>
+                    <h2 className={styles.heading}>Hey, I’m Jacob</h2>
                         <p className={styles.welcomeText}>
-                            I’m an Informatics student at Högskolan Väst in Sweden, passionate about consumer tech, software development, and design.  
-                            Outside of tech, I enjoy cars, hiking, strength training and photography.
-                            Feel free to explore some of my <Link to="/projects" className="inlineLink">projects</Link>.
+                            I'm an Informatics student from Sweden who loves building things with code and design.  
+                            When I’m not at the keyboard, you’ll usually find me hiking with friends, lifting at the gym, or behind 	a camera.  
+                            Take a look at some of my <Link to="/projects" className="inlineLink">projects</Link>.
                         </p>
 
                     </div>
