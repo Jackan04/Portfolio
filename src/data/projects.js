@@ -1,23 +1,32 @@
 const projects = [
-    {
-        category: "Design",
-        href: "https://www.linkedin.com/pulse/designcase-förbättring-av-självbetjäningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
-        title: "Redesign of Self-Checkout",
-        description: "Suggested improvements for a self-service checkout screen based on observed usability issues, aiming to make it more intuitive and reduce errors for first-time users."
-    },
-    {
-        category: "Coding",
-        href: "https://github.com/Jackan04/Task-Manager",
-        title: "Simple Project Manager",
-        description: "A project management app that helps you organize multiple projects, create task lists, and track tasks. Includes task notes, due dates and saves your data locally in the browser."
-    },
-    {
-        category: "Coding",
-        href: "https://github.com/Jackan04/Task-app",
-        title: "Simple Todo List",
-        description: "A minimal, delightful todo app with due dates, completion tracking, and task statistics. Features local storage persistence in the browser."
-    }
+  {
+    category: "Coding",
+    href: "https://github.com/Jackan04/MediaTracker?tab=readme-ov-file",
+    title: "Media Tracker",
+    description:
+      "A mobile app built with React Native, Expo and SQLite for tracking movies and shows. Search, save, pin, mark as watched, and manage your personal watchlist — with detailed info for each title powered by TMDB.",
+  },
+  {
+    category: "Design",
+    href: "https://www.linkedin.com/pulse/designcase-förbättring-av-självbetjäningskassa-jacob-asker-hva4e/?trackingId=T%2BxvKZHHRFeXrygYROiDBg%3D%3D",
+    title: "Redesign of Self-Checkout",
+    description:
+      "Suggested improvements for a self-service checkout screen based on observed usability issues, aiming to make it more intuitive and reduce errors for first-time users.",
+  },
+  {
+    category: "Coding",
+    href: "https://github.com/Jackan04/Task-Manager",
+    title: "Simple Project Manager",
+    description:
+      "A project management app that helps you organize multiple projects, create task lists, and track tasks. Includes task notes, due dates and saves your data locally in the browser.",
+  },
+  {
+    category: "Coding",
+    href: "https://github.com/Jackan04/Task-app",
+    title: "Simple Todo List",
+    description:
+      "A minimal, delightful todo app with due dates, completion tracking, and task statistics. Features local storage persistence in the browser.",
+  },
 ];
 
 export default projects;
-
