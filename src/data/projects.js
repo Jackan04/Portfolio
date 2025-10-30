@@ -1,4 +1,13 @@
+import { href } from "react-router-dom";
+
 const projects = [
+  {
+    category: "Coding",
+    href: "https://github.com/Jackan04/Ticky",
+    title: "Ticky - Task Manager",
+    description:
+      "A minimal and delightful task manager built with React and Firebase. Ticky helps you create lists, add tasks, set due dates, and take notes, all without the clutter.",
+  },
   {
     category: "Coding",
     href: "https://github.com/Jackan04/MediaTracker?tab=readme-ov-file",
@@ -12,20 +21,6 @@ const projects = [
     title: "Redesign of Self-Checkout",
     description:
       "Suggested improvements for a self-service checkout screen based on observed usability issues, aiming to make it more intuitive and reduce errors for first-time users.",
-  },
-  {
-    category: "Coding",
-    href: "https://github.com/Jackan04/Task-Manager",
-    title: "Simple Project Manager",
-    description:
-      "A project management app that helps you organize multiple projects, create task lists, and track tasks. Includes task notes, due dates and saves your data locally in the browser.",
-  },
-  {
-    category: "Coding",
-    href: "https://github.com/Jackan04/Task-app",
-    title: "Simple Todo List",
-    description:
-      "A minimal, delightful todo app with due dates, completion tracking, and task statistics. Features local storage persistence in the browser.",
   },
 ];
 
