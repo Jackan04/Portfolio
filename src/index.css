@@ -25,6 +25,7 @@
   --padding-md: 0.9375rem;
   --padding-lg: 1.25rem;
 
+  --font-size-small: 14px;
   --font-size-base: 1rem;
   --font-size-h2: 1.2rem;
   --line-height-body: 1.6;
@@ -118,6 +119,7 @@ button:hover,
 a:hover,
 .inlineLink:hover {
   opacity: var(--hover-global);
+  
 }
 
 .button:active,
