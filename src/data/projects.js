@@ -3,6 +3,13 @@ import { href } from "react-router-dom";
 const projects = [
   {
     category: "Coding",
+    href: "https://github.com/Jackan04/ShelfLife",
+    title: "ShelfLife",
+    description:
+      "iOS app developed in Swift and SwiftUI with SwiftData storage helps you track groceries and their expiration dates. Search, add, update, and delete groceries, view upcoming and expired expirations, and organize them into categories.",
+  },
+  {
+    category: "Coding",
     href: "https://github.com/Jackan04/Ticky",
     title: "Ticky - Task Manager",
     description:
