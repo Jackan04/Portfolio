@@ -1,12 +1,10 @@
-import { href } from "react-router-dom";
-
 const projects = [
   {
     category: "Coding",
     href: "https://github.com/Jackan04/ShelfLife",
     title: "ShelfLife",
     description:
-      "iOS app developed in Swift and SwiftUI with SwiftData storage helps you track groceries and their expiration dates. Search, add, update, and delete groceries, view upcoming and expired expirations, and organize them into categories.",
+      "iOS app built with Swift and SwiftUI that helps users track groceries and expiration dates. Search, add, update, and delete items, view upcoming and expired products, and organize groceries by category. Data is persisted using SwiftData.",
   },
   {
     category: "Coding",
