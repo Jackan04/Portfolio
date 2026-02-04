@@ -1,6 +1,13 @@
 const projects = [
   {
     category: "Coding",
+    href: "https://github.com/Jackan04/Blog-app",
+    title: "Blog App",
+    description:
+      "A full-stack blog application built with Node.js, Express, and MongoDB. It allows users to create, read, edit, and delete blog posts. The application features a clean, unobtrusive and responsive user interface.",
+  },
+  {
+    category: "Coding",
     href: "https://github.com/Jackan04/ShelfLife",
     title: "ShelfLife",
     description:
