@@ -70,6 +70,7 @@
     margin-left: 1.2rem;
     margin-right: 1.2rem;
   }
+
   .nav,
   .headerControls {
     display: none;
@@ -110,5 +111,17 @@
     border-radius: var(--border-radius);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-dark);
+    animation-name: fade-in;
+    animation-duration: 0.7s;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }

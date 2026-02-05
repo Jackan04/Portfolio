@@ -45,7 +45,9 @@
   --border-dark: #4a4a4a;
   --grey-light: #2c2c2c;
   --grey-dark: #b0b3b3;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 *,
@@ -111,7 +113,9 @@ a,
   /* Transform baseline to avoid jitter effect in Safari */
   transform: translateZ(0) translateY(0);
   will-change: transform, opacity;
-  transition: transform 0.12s ease-in-out, opacity 0.12s ease-in-out;
+  transition:
+    transform 0.12s ease-in-out,
+    opacity 0.12s ease-in-out;
 }
 
 .button:hover,
@@ -119,7 +123,6 @@ button:hover,
 a:hover,
 .inlineLink:hover {
   opacity: var(--hover-global);
-  
 }
 
 .button:active,
@@ -140,28 +143,28 @@ a:active,
     --font-size-h2: 1.1rem;
   }
 }
-
-@media (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) {
   * {
     transition: none !important;
   }
 
   button:active,
-  a:active {
+  a:active, .projectCard:active {
     transform: none !important;
   }
 
   button:hover,
   a:hover,
   .button:hover,
-  link:hover {
+  .projectCard:hover {
     opacity: 1 !important;
     transform: none !important;
   }
 
-  button:focus,
-  a:focus {
-    outline: none !important;
-    border: none !important;
+  /* Focus indicators for accessibility */
+  button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent-dark);
+    outline-offset: 2px;
   }
 }
